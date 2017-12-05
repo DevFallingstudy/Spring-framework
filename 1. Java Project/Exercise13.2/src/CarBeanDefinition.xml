@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="car1" class="myPackage.CarFactory" factory-method="makeCar">
+	<constructor-arg value="Aslan" />
+	<constructor-arg value="2014" />
+	<constructor-arg value="Hyundai" />
+</bean>
+
+<bean id="car2" class="myPackage.CarFactory" factory-method="makeCar">
+	<constructor-arg value="Ray" />
+	<constructor-arg value="2014" />
+</bean>
+
+</beans>
