@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="emp1" class="myPackage.Employee">
+	<property name="name" value="Yang Yousung"/>
+	<property name="ID" value="201533653"/>
+</bean>
+
+<bean id="emp2" class="myPackage.Employee">
+	<constructor-arg value="201533656" />
+	<constructor-arg value="Yu Jeemin" />
+</bean>
+
+</beans>
